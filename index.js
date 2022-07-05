@@ -31,7 +31,7 @@ class Usuario {
 const Usuario1 = new Usuario(
     'Nicolás',
     'Ríos',
-    {nombre: 'Arsene Lupin', autor: 'Maurice Leblanc'},
+    [{nombre: 'Arsene Lupin', autor: 'Maurice Leblanc'}],
     ['Baco','Lola']
 )
 
@@ -41,7 +41,7 @@ Usuario1.addBook('La Odisea', 'Homero')
 console.log(Usuario1)
 console.log(`Nombre completo: ${Usuario1.getFullName()}`)
 console.log(`El usuario tiene ${Usuario1.countMascotas()} mascotas`)
-console.log(`El usuario tiene los libros: ${Usuario1.getBookNames}`)
+console.log(`El usuario tiene los libros: ${Usuario1.getBookNames()}`)
 
 
 
